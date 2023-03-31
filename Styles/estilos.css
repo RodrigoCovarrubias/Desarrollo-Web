@@ -1,4 +1,7 @@
 html, body {
+    background-image: url(/img/marco-perros-sobre-fondo-blanco_53876-99295.jpg);
+    background-size: cover;
+    background-position: center;
     margin:0;
     padding:0;
     height:100%;
