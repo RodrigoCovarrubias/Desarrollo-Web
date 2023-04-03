@@ -1,5 +1,5 @@
-html, body {
-    /* background-image: url(/img/marco-perros-sobre-fondo-blanco_53876-99295.jpg); */
+body {
+    background-image: url(/img/marco-perros-sobre-fondo-blanco_53876-99295.jpg);
     background-size: cover;
     background-position: center;
     margin:0;
@@ -31,8 +31,7 @@ html, body {
   }
 
 .destacado {
-    
-    font-weight: bold;
+        font-weight: bold;
 
     text-shadow:
     -1px -1px 0 #000,
@@ -40,3 +39,74 @@ html, body {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+.barraSuperior{
+  background-color: #05b2a2;
+
+}
+.botonBase{
+  background-color: #ef7120;
+ 
+ 
+}
+.botonBase:hover{
+  background-color: #05b2a2;
+
+}
+.titulo {
+  font-size: 450%;
+  font-weight: bold;
+  font-family: Marker Felt, fantasy;
+  color: #ef7120;
+}
+.barraInferior{
+  background-color: #05b2a2;
+  
+
+}
+.imagenesVision{
+  background-image: url(/img/adiestramiento1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+.imagenesVisionDos{
+  background-image: url(/img/paseadorPerro1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+
+
+}
+.imagenesVisionTres{
+  background-image: url(/img/paseadorPerro3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+.overlay{
+  height: 70%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 75%;
+  top: 0;
+  background-color: white; 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+
+  }
+.closebtn{
+  position: relative;
+  left: 2%;
+  color: #ef7120;
+}
+.btn-primary{
+  background-color: #ef7120 !important;
+}
+
+  .titulo {
+    font-size: 450%;
+    font-weight: bold;
+    font-family: Marker Felt, fantasy;
+    color: #ef7120;
+  }
