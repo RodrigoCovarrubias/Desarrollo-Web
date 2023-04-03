@@ -34,7 +34,6 @@
             >PetWalkers
             <img src="./img/perritos barra.PNG" width="70" height="70"
           /></a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -58,13 +57,17 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <button
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
+                >
                   <img
                     src="./img/iconoc inicio sesion.PNG"
                     width="40"
                     height="40"
                   />
-                </a>
+                </button>
               </li>
               <li class="nav-item">
                 <a
@@ -95,138 +98,206 @@
               </li>
             </ul>
           </div>
+          <div
+            class="modal fade"
+            id="exampleModalLong"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Inicio sesion
+                  </h5>
+                  <button
+                    type="button"
+                    class="close rounded"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form onsubmit="return validateForm()">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Correo</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        required
+                      />
+                      <small id="emailHelp" class="form-text text-muted"
+                        >Nunca Compartiremos tu correo.</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Contraseña</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        required
+                      />
+                    </div>
+                    <div class="form-check"></div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Iniciar Sesion
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <h1 class="titulo text-center">NUESTROS CUIDADORES</h1>
-      <div class="container col-md-8 mx-auto">
-        <div class="row mt-4 mb-5">
-          <div class="col-lg-4 col-md-12">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador-3.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ana Martínez</h5>
-                <p class="card-text">
-                  Como cuidador y paseador de mascotas, me encargo de brindar un
-                  cuidado afectuoso y responsable para tus mascotas,
-                  asegurándome de que estén felices y saludables en todo
-                  momento.
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+      <div class="cuerpo">
+        <h1 class="titulo text-center">NUESTROS CUIDADORES</h1>
+        <div class="container">
+          <div class="row mt-4 mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador-3.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ana Martínez</h5>
+                  <p class="card-text">
+                    Como cuidador y paseador de mascotas, me encargo de brindar
+                    un cuidado afectuoso y responsable para tus mascotas,
+                    asegurándome de que estén felices y saludables en todo
+                    momento.
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador4.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laura Pérez</h5>
+                  <p class="card-text">
+                    Soy un cuidador y paseador de mascotas con experiencia en el
+                    cuidado de diferentes tipos de animales. Me comprometo a
+                    proporcionar un servicio excepcional y a garantizar su
+                    bienestar y seguridad.
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador7.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Carlos González</h5>
+                  <p class="card-text">
+                    Como cuidador y paseador de mascotas, me encanta trabajar
+                    con animales y estoy dedicado a brindarles el mejor cuidado
+                    posible. Soy responsable y comprometido con garantizar su
+                    felicidad y salud.
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador4.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Laura Pérez</h5>
-                <p class="card-text">
-                  Soy un cuidador y paseador de mascotas con experiencia en el
-                  cuidado de diferentes tipos de animales. Me comprometo a
-                  proporcionar un servicio excepcional y a garantizar su
-                  bienestar y seguridad.
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador8.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">David Fernández</h5>
+                  <p class="card-text">
+                    Soy un apasionado cuidador y paseador de mascotas,
+                    comprometido con brindar un cuidado de alta calidad para tus
+                    queridas mascotas. Me aseguro de que reciban el ejercicio
+                    adecuado y estén cómodos y seguros en todo momento..
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador7.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Carlos González</h5>
-                <p class="card-text">
-                  Como cuidador y paseador de mascotas, me encanta trabajar con
-                  animales y estoy dedicado a brindarles el mejor cuidado
-                  posible. Soy responsable y comprometido con garantizar su
-                  felicidad y salud.
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador5.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sofía Torres</h5>
+                  <p class="card-text">
+                    Como cuidador y paseador de mascotas, mi objetivo es ofrecer
+                    un servicio personalizado y profesional para tus mascotas.
+                    Soy amable y responsable, y me comprometo a garantizar su
+                    felicidad y bienestar en todo momento.
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador8.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">David Fernández</h5>
-                <p class="card-text">
-                  Soy un apasionado cuidador y paseador de mascotas,
-                  comprometido con brindar un cuidado de alta calidad para tus
-                  queridas mascotas. Me aseguro de que reciban el ejercicio
-                  adecuado y estén cómodos y seguros en todo momento..
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
-              </div>
-            </div>
-          </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/cuidador9.jpg"
+                  alt="Card image cap"
+                />
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador5.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sofía Torres</h5>
-                <p class="card-text">
-                  Como cuidador y paseador de mascotas, mi objetivo es ofrecer
-                  un servicio personalizado y profesional para tus mascotas. Soy
-                  amable y responsable, y me comprometo a garantizar su
-                  felicidad y bienestar en todo momento.
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img
-                class="card-img-top"
-                src="img/cuidador9.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">María García</h5>
-                <p class="card-text">
-                  Soy un cuidador y paseador de mascotas confiable y
-                  comprometido, con experiencia en el cuidado de diferentes
-                  tipos de mascotas. Me aseguro de proporcionarles el cuidado
-                  amoroso y responsable que necesitan para estar felices y
-                  saludables.
-                </p>
-                <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                <div class="card-body">
+                  <h5 class="card-title">María García</h5>
+                  <p class="card-text">
+                    Soy un cuidador y paseador de mascotas confiable y
+                    comprometido, con experiencia en el cuidado de diferentes
+                    tipos de mascotas. Me aseguro de proporcionarles el cuidado
+                    amoroso y responsable que necesitan para estar felices y
+                    saludables.
+                  </p>
+                  <a href="#" class="btn btn-primary">Quiero este cuidador</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="barraSuperior barraInferior">
         <footer>
           <div class="mb-auto">
@@ -252,9 +323,14 @@
     </main>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     ></script>
   </body>
 </html>
