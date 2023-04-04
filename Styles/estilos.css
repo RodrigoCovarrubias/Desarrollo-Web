@@ -249,6 +249,7 @@ body {
   /* ----- -----  Mediaqueries ----- ----- */
   @media screen and (max-width: 800px) {
     .formulario {
+      background-image: url(/img/marco-perros-sobre-fondo-blanco_53876-99295.jpg);
       grid-template-columns: 1fr;
     }
   
