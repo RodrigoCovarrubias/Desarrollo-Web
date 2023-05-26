@@ -64,13 +64,13 @@ body {
 
 }
 .imagenesVision{
-  background-image: url(/img/adiestramiento1.jpg);
+  background-image: url(../img/adiestramiento1.jpg);
   background-position: center;
   background-size: cover;
   height: auto;
 }
 .imagenesVisionDos{
-  background-image: url(/img/paseadorPerro1.jpg);
+  background-image: url(../img/paseadorPerro1.jpg);
   background-position: center;
   background-size: cover;
   height: auto;
@@ -78,7 +78,7 @@ body {
 
 }
 .imagenesVisionTres{
-  background-image: url(/img/paseadorPerro3.jpg);
+  background-image: url(../img/paseadorPerro3.jpg);
   background-position: center;
   background-size: cover;
   height: auto;
@@ -249,7 +249,6 @@ body {
   /* ----- -----  Mediaqueries ----- ----- */
   @media screen and (max-width: 800px) {
     .formulario {
-      background-image: url(/img/marco-perros-sobre-fondo-blanco_53876-99295.jpg);
       grid-template-columns: 1fr;
     }
   
